@@ -1,0 +1,94 @@
+<div class="absolute inset-0 flex min-w-0 flex-col overflow-hidden">
+    <mat-drawer-container
+        class="bg-card h-full flex-auto dark:bg-transparent"
+        (backdropClick)="onBackdropClicked()"
+    >
+        <mat-drawer
+            class="w-full dark:bg-gray-900 sm:w-128"
+            [mode]="drawerMode"
+            [opened]="false"
+            [position]="'end'"
+            [disableClose]="true"
+            #matDrawer
+        >
+            <router-outlet></router-outlet>
+        </mat-drawer>
+
+        <mat-drawer-content class="flex flex-col">
+            <div class="flex flex-auto flex-col">
+                <div class="flex flex-col items-start px-6 py-8 sm:flex-row sm:items-center sm:justify-between md:px-8">
+                    <div>
+                        <div class="text-4xl font-extrabold leading-none tracking-tight">
+                            Tarefas
+                        </div>
+                        <div class="text-secondary ml-0.5 font-medium">
+                            @if (tasksCount.incomplete === 0) {
+                                <span>todas as tarefas estão concluídas!</span>
+                            }
+                            @if (tasksCount.incomplete !== 0) {
+                                <span>{{ tasksCount.incomplete }} tarefas restantes</span>
+                            }
+                        </div>
+                    </div>
+                    <div class="mt-4 sm:mt-0">
+                        <button
+                            class="ml-3"
+                            mat-flat-button
+                            [color]="'primary'"
+                            (click)="createTask()"
+                            [matTooltip]="'shortcut: ctrl + /'"
+                        >
+                            <mat-icon [svgIcon]="'heroicons_outline:plus'"></mat-icon>
+                            <span class="ml-2 mr-1">Adicionar tarefa</span>
+                        </button>
+                    </div>
+                </div>
+
+                @if (tasks && tasks.length > 0) {
+                    <div class="divide-y">
+                        @for (task of tasks; track trackByFn($index, task); let first = $first) {
+                            <div
+                                [id]="'task-' + task.id"
+                                class="group w-full py-4 select-none dark:hover:bg-hover hover:bg-gray-100"
+                                [class.border-t]="first"
+                            >
+                                <div class="relative flex h-full items-center pl-10">
+                                    @if (selectedTask && selectedTask.id === task.id) {
+                                        <div class="absolute -bottom-px -top-px right-0 z-10 flex w-1 flex-0 bg-primary"></div>
+                                    }
+
+                                    <button class="-ml-2.5 mr-2 leading-none" (click)="toggleStatus(task)" mat-icon-button>
+                                        @if (task.status === 'Concluida') {
+                                            <mat-icon class="text-green-600" [svgIcon]="'heroicons_solid:check-circle'"></mat-icon>
+                                        }
+                                        @if (task.status !== 'Concluida') {
+                                            <mat-icon class="text-hint" [svgIcon]="'heroicons_outline:check-circle'"></mat-icon>
+                                        }
+                                    </button>
+
+                                    <a class="flex h-full min-w-0 flex-auto items-center pr-7" [routerLink]="[task.id]">
+                                        <div class="mr-2 flex-auto truncate">
+                                            @if (task.title) {
+                                                <span [class.line-through]="task.status === 'Concluida'">{{ task.title }}</span>
+                                            }
+                                            @if (!task.title) {
+                                                <span class="text-hint select-none">título da tarefa</span>
+                                            }
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                } @else {
+                    <div class="flex flex-auto flex-col items-center justify-center bg-gray-100 dark:bg-transparent">
+                        <mat-icon class="icon-size-24" [svgIcon]="'heroicons_outline:clipboard-document-list'"></mat-icon>
+                        <div class="text-secondary mt-4 text-2xl font-semibold tracking-tight">
+                            Crie sua primeira tarefa!
+                        </div>
+                    </div>
+                }
+            </div>
+        </mat-drawer-content>
+    </mat-drawer-container>
+</div>

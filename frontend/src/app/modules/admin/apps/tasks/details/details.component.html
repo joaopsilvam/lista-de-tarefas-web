@@ -1,0 +1,84 @@
+<div class="flex flex-auto">
+    <form class="flex flex-auto flex-col overflow-y-auto p-6 pt-10 sm:p-8 sm:pt-10" [formGroup]="taskForm">
+        <div class="-ml-4 -mt-3 flex items-center justify-between">
+            @if(isNew){
+            <div class="pl-3.5 pr-4" mat-button>
+                <div class="flex items-center justify-center">
+                    <span class="ml-2 font-semibold">CRIAR NOVA TAREFA</span>
+                </div>
+            </div>
+            }
+            @else {
+            <button class="pl-3.5 pr-4" mat-button (click)="toggleStatus()">
+                @if (taskForm.get('status').value !== 'Concluida') {
+                <div class="flex items-center justify-center">
+                    <mat-icon [svgIcon]="'heroicons_outline:check-circle'"></mat-icon>
+                    <span class="ml-2 font-semibold">MARCAR COMO CONCLUÍDA</span>
+                </div>
+                }
+                @if (taskForm.get('status').value === 'Concluida') {
+                <div class="flex items-center justify-center">
+                    <mat-icon class="text-primary" [svgIcon]="'heroicons_outline:check-circle'"></mat-icon>
+                    <span class="ml-2 font-semibold">MARCAR COMO PENDENTE</span>
+                </div>
+                }
+            </button>
+            }
+
+            <div class="flex items-center">
+                <button mat-icon-button [matMenuTriggerFor]="moreMenu">
+                    <mat-icon [svgIcon]="'heroicons_outline:ellipsis-vertical'"></mat-icon>
+                </button>
+                <mat-menu #moreMenu="matMenu">
+                    <button mat-menu-item (click)="deleteTask()">
+                        <mat-icon [svgIcon]="'heroicons_outline:trash'"></mat-icon>
+                        <span>Excluir Tarefa</span>
+                    </button>
+                </mat-menu>
+
+                <a mat-icon-button [routerLink]="['../']">
+                    <mat-icon [svgIcon]="'heroicons_outline:x-mark'"></mat-icon>
+                </a>
+            </div>
+        </div>
+
+        <mat-divider class="mb-8 mt-6"></mat-divider>
+
+        <div>
+            <mat-form-field class="w-full" [subscriptSizing]="'dynamic'">
+                <mat-label>Título da Tarefa</mat-label>
+                <textarea matInput [formControlName]="'title'" [spellcheck]="false" cdkTextareaAutosize
+                    #titleField></textarea>
+            </mat-form-field>
+        </div>
+
+        <div class="mt-8">
+            <div class="font-medium">Descrição</div>
+            <mat-form-field class="w-full" [subscriptSizing]="'dynamic'">
+                <textarea matInput [formControlName]="'description'" [spellcheck]="false"
+                    cdkTextareaAutosize></textarea>
+            </mat-form-field>
+        </div>
+
+        <div class="mt-8">
+            <input type="file" class="hidden" #fileInput (change)="onFileSelected($event)" />
+            <div class="mt-8">
+                <div class="font-medium">Imagem</div>
+                @if (taskForm.get('imagePath').value) {
+                <img [src]="'data:image/png;base64,' + taskForm.get('imagePath').value" alt="Imagem da tarefa"
+                    class="mt-2 w-full h-auto rounded shadow" />
+                } @else {
+                <span class="text-gray-500">Nenhuma imagem adicionada</span>
+                }
+                <button mat-button class="mt-2 w-full" (click)="fileInput.click()">Selecionar Imagem</button>
+
+            </div>
+        </div>
+
+        <div class="mt-8 flex justify-end">
+            <button mat-flat-button color="primary" (click)="saveTask()" [disabled]="taskForm.invalid">
+                <span class="">Salvar</span>
+            </button>
+        </div>
+    </form>
+</div>

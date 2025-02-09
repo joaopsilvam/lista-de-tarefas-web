@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\joaop\\Desktop\\lista-de-tarefas\\backend\\wwwroot\\uploads\\0c697af3-5749-4f8f-a14c-9e2b1336b180.png",
+      "PackagePath": "staticwebassets\\uploads\\0c697af3-5749-4f8f-a14c-9e2b1336b180.png"
+    },
+    {
+      "Id": "C:\\Users\\joaop\\Desktop\\lista-de-tarefas\\backend\\wwwroot\\uploads\\11b1c00a-5480-4375-845e-15fd54b07487.png",
+      "PackagePath": "staticwebassets\\uploads\\11b1c00a-5480-4375-845e-15fd54b07487.png"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.TaskManagerApi.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.TaskManagerApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.build.TaskManagerApi.props",
+      "PackagePath": "build\\TaskManagerApi.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.TaskManagerApi.props",
+      "PackagePath": "buildMultiTargeting\\TaskManagerApi.props"
+    },
+    {
+      "Id": "obj\\Release\\net9.0\\staticwebassets\\msbuild.buildTransitive.TaskManagerApi.props",
+      "PackagePath": "buildTransitive\\TaskManagerApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

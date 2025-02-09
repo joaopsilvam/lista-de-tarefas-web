@@ -1,0 +1,228 @@
+{
+  "Version": 1,
+  "Hash": "bYBEX80rBzsYBzzVsQPfxh62UFRcrG19sidMjLBpMX8=",
+  "Source": "TaskManagerApi",
+  "BasePath": "_content/TaskManagerApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TaskManagerApi\\wwwroot",
+      "Source": "TaskManagerApi",
+      "ContentRoot": "C:\\Users\\joaop\\Desktop\\lista-de-tarefas\\backend\\wwwroot\\",
+      "BasePath": "_content/TaskManagerApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\joaop\\Desktop\\lista-de-tarefas\\backend\\wwwroot\\uploads\\0c697af3-5749-4f8f-a14c-9e2b1336b180.png",
+      "SourceId": "TaskManagerApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\joaop\\Desktop\\lista-de-tarefas\\backend\\wwwroot\\",
+      "BasePath": "_content/TaskManagerApi",
+      "RelativePath": "uploads/0c697af3-5749-4f8f-a14c-9e2b1336b180#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "67haa6vozf",
+      "Integrity": "kofPRH7ZB/YtPOq3i5tEHpEl1PutPaGXMJuDjB2sD/g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\0c697af3-5749-4f8f-a14c-9e2b1336b180.png"
+    },
+    {
+      "Identity": "C:\\Users\\joaop\\Desktop\\lista-de-tarefas\\backend\\wwwroot\\uploads\\11b1c00a-5480-4375-845e-15fd54b07487.png",
+      "SourceId": "TaskManagerApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\joaop\\Desktop\\lista-de-tarefas\\backend\\wwwroot\\",
+      "BasePath": "_content/TaskManagerApi",
+      "RelativePath": "uploads/11b1c00a-5480-4375-845e-15fd54b07487#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "67haa6vozf",
+      "Integrity": "kofPRH7ZB/YtPOq3i5tEHpEl1PutPaGXMJuDjB2sD/g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\11b1c00a-5480-4375-845e-15fd54b07487.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "uploads/0c697af3-5749-4f8f-a14c-9e2b1336b180.67haa6vozf.png",
+      "AssetFile": "C:\\Users\\joaop\\Desktop\\lista-de-tarefas\\backend\\wwwroot\\uploads\\0c697af3-5749-4f8f-a14c-9e2b1336b180.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28247"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kofPRH7ZB/YtPOq3i5tEHpEl1PutPaGXMJuDjB2sD/g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 19:00:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "67haa6vozf"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/0c697af3-5749-4f8f-a14c-9e2b1336b180.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kofPRH7ZB/YtPOq3i5tEHpEl1PutPaGXMJuDjB2sD/g="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/0c697af3-5749-4f8f-a14c-9e2b1336b180.png",
+      "AssetFile": "C:\\Users\\joaop\\Desktop\\lista-de-tarefas\\backend\\wwwroot\\uploads\\0c697af3-5749-4f8f-a14c-9e2b1336b180.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28247"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kofPRH7ZB/YtPOq3i5tEHpEl1PutPaGXMJuDjB2sD/g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 19:00:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kofPRH7ZB/YtPOq3i5tEHpEl1PutPaGXMJuDjB2sD/g="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/11b1c00a-5480-4375-845e-15fd54b07487.67haa6vozf.png",
+      "AssetFile": "C:\\Users\\joaop\\Desktop\\lista-de-tarefas\\backend\\wwwroot\\uploads\\11b1c00a-5480-4375-845e-15fd54b07487.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28247"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kofPRH7ZB/YtPOq3i5tEHpEl1PutPaGXMJuDjB2sD/g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 18:58:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "67haa6vozf"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/11b1c00a-5480-4375-845e-15fd54b07487.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kofPRH7ZB/YtPOq3i5tEHpEl1PutPaGXMJuDjB2sD/g="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/11b1c00a-5480-4375-845e-15fd54b07487.png",
+      "AssetFile": "C:\\Users\\joaop\\Desktop\\lista-de-tarefas\\backend\\wwwroot\\uploads\\11b1c00a-5480-4375-845e-15fd54b07487.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28247"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kofPRH7ZB/YtPOq3i5tEHpEl1PutPaGXMJuDjB2sD/g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 08 Feb 2025 18:58:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kofPRH7ZB/YtPOq3i5tEHpEl1PutPaGXMJuDjB2sD/g="
+        }
+      ]
+    }
+  ]
+}

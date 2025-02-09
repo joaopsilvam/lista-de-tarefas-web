@@ -59,7 +59,7 @@ Agora, entre na pasta do frontend e execute o seguinte comando:
 npm run start
 ```
 
-Isso [iniciará o backend na](http://localhost:5000) porta `5000` e o frontend na porta `4200`.
+Isso iniciará o backend na porta `5000` e o frontend na porta `4200`.
 
 ## Testando a API
 

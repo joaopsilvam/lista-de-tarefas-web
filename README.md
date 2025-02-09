@@ -53,10 +53,10 @@ Para rodar o frontend e backend simultaneamente, utilize o `concurrently`. Se ai
 npm install -g concurrently
 ```
 
-Agora, execute o seguinte comando na raiz do projeto:
+Agora, entre na pasta do frontend e execute o seguinte comando:
 
 ```sh
-concurrently "cd backend && dotnet run" "cd frontend && npm start"
+npm run start
 ```
 
 Isso [iniciará o backend na](http://localhost:5000) porta `5000` e o frontend na porta `4200`.

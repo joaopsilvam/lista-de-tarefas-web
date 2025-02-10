@@ -14,21 +14,24 @@ Antes de iniciar, certifique-se de ter instalado em sua máquina:
 ## Configuração do Banco de Dados
 
 1. Inicie o PostgreSQL e crie um banco de dados chamado `task_manager`.
-2. Crie um usuário para acesso ao banco:
+   ```sql
+   CREATE DATABASE task_manager;
+   ```
+3. Crie um usuário para acesso ao banco:
    ```sql
    CREATE USER joaopsilvam WITH PASSWORD 'joaopsilvam';
    ```
-3. Conceda permissões ao usuário no banco:
+4. Conceda permissões ao usuário no banco:
    ```sql
    ALTER DATABASE task_manager OWNER TO joaopsilvam;
    ```
-4. No arquivo **appsettings.json** do backend, configure a string de conexão:
+5. No arquivo **appsettings.json** do backend, configure a string de conexão:
    ```json
    "ConnectionStrings": {
      "DefaultConnection": "Host=localhost;Port=5432;Database=task_manager;Username=joaopsilvam;Password=joaopsilvam"
    }
    ```
-5. Aplique as migrações do banco de dados:
+6. Aplique as migrações do banco de dados:
    ```sh
    cd backend
    dotnet ef database update

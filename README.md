@@ -13,7 +13,11 @@ Antes de iniciar, certifique-se de ter instalado em sua máquina:
 
 ## Configuração do Banco de Dados
 
-1. Inicie o PostgreSQL e crie um banco de dados chamado `task_manager`.
+1. Instale o EFC.
+   ```sql
+   dotnet tool install --global dotnet-ef
+   ```
+2. Inicie o PostgreSQL e crie um banco de dados chamado `task_manager`.
    ```sql
    CREATE DATABASE task_manager;
    ```
